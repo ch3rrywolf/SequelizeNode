@@ -1,5 +1,4 @@
-const {Model,DataTypes } = require('sequelize');
-const sequelize = require('./index')
+module.exports = (sequelize,DataTypes,Model) => {
 
 class User extends Model {}
 
@@ -16,5 +15,4 @@ User.init({
     sequelize,
     modelName: 'User'
 });
-
-module.exports=User
+}
