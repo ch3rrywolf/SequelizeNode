@@ -11,4 +11,5 @@ const Contact = sequelize.define('contacts', {
     }, {
 
     });
+    return Contact;
 }

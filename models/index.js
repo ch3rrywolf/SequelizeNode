@@ -2,6 +2,7 @@ const { Sequelize, DataTypes, Model } = require('sequelize');
 
 const sequelize = new Sequelize('seqnode_db', 'root', 'pass', {
     host: '127.0.0.1',
+    logging: false,
     dialect: 'mysql'
 });
 
